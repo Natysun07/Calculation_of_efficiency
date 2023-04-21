@@ -50,7 +50,7 @@ public class StatsService {
         int averageValue = getAverageValue(data);
         int listHiAverageValue = 0;
         for (int i = 0; i < data.length; i++) {
-            if (data[i] < averageValue) {
+            if (data[i] > averageValue) {
                 listHiAverageValue++;
             }
         }
